@@ -1,34 +1,175 @@
-extends partial/layout
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="2018-4-3搭建#配置要求 1核2G #系统要求 centos7(其实centos6也可以安装)安装 配置yum源 vim /etc/yum.repos.d/gitlab-ce.repo #添加以下内容 [gitlab-ce] name=gitlab-ce baseurl=http://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el6 Repo_gp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://whisshe.github.io/2019/09/14/gitLab/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="2018-4-3搭建#配置要求 1核2G #系统要求 centos7(其实centos6也可以安装)安装 配置yum源 vim /etc/yum.repos.d/gitlab-ce.repo #添加以下内容 [gitlab-ce] name=gitlab-ce baseurl=http://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el6 Repo_gp">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-14T00:36:37.535Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="2018-4-3搭建#配置要求 1核2G #系统要求 centos7(其实centos6也可以安装)安装 配置yum源 vim /etc/yum.repos.d/gitlab-ce.repo #添加以下内容 [gitlab-ce] name=gitlab-ce baseurl=http://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el6 Repo_gp">
+  
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+</html>
+<body style="
 
-include mixins
 
-block site_title
-    != page.title + " · " + config.title
+  background-color: #eff0f6
 
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
+">
+  <div id="container">
+    <nav id="nav">
+  <header class="header">
+    <a href="/" class="title">Clover Tuan</a>
+  </header>
+  <div class="ctnWrap">
+    <div class="icons">
+      
+        
+          
+            <a href="https://dribbble.com/clovertuan" target="_blank" class="nav-icn iconfont icon-dribbble"></a>
+          
+        
+          
+            <a href="https://www.behance.net/clovertuan" target="_blank" class="nav-icn iconfont icon-behance"></a>
+          
+        
+          
+            <a href="http://clovertuan.lofter.com/" target="_blank" class="nav-icn iconfont icon-lofter"></a>
+          
+        
+          
+            <a href="https://www.instagram.com/clovertuan/" target="_blank" class="nav-icn iconfont icon-instagram"></a>
+          
+        
+          
+            <a href="https://github.com/cloverTuan" target="_blank" class="nav-icn iconfont icon-github"></a>
+          
+        
+      
+    </div>
+    <div class="menu">
+      
+        
+            <a href="/" class="nav-menu ">HOME</a>
+          
+        
+            <a href="/archives" class="nav-menu ">ARCHIVE</a>
+          
+        
+            <a href="/about" class="nav-menu ">ABOUT</a>
+          
+        
+      
+    </div>
+  </div>
+</nav>
+    <div id="main"><section class="article">
+  <h2 class="title"></h2>
+  <p class="sub">Sep 14, 2019</p>
+  <article class="content">
+    <h1 id="2018-4-3"><a href="#2018-4-3" class="headerlink" title="2018-4-3"></a>2018-4-3</h1><h2 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h2><pre><code>#配置要求
+1核2G
+#系统要求
+centos7(其实centos6也可以安装)</code></pre><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ul>
+<li><p>配置yum源</p>
+<pre><code>vim /etc/yum.repos.d/gitlab-ce.repo
+#添加以下内容
+[gitlab-ce]
+name=gitlab-ce
+baseurl=http://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el6
+Repo_gpgcheck=0
+Enabled=1
+Gpgkey=https://packages.gitlab.com/gpg.key</code></pre></li>
+<li><p>更新yum缓存</p>
+<pre><code>yum makecache
+#安装最新社区版的gitlab
+yum intall gitlab-ce</code></pre></li>
+<li><p>根据需求修改配置文件</p>
+<pre><code>#配置文件为/etc/gitlab/gitlab.rb
+有端口冲突的进行修改</code></pre></li>
+</ul>
+<h4 id="修改root密码"><a href="#修改root密码" class="headerlink" title="修改root密码"></a>修改root密码</h4><pre><code>gitlab-rails console production  #以root用户运行，进入修改密码交互命令行
+user = User.where(id: 1).first   #将user定义为root
+user.password = &apos;secret_pass&apos;    #设置密码(密码长度要超过8个)
+user.password_confirmation = &apos;secret_pass&apos; #确认密码
+user.save #保存密码
+quit #退出交互命令行</code></pre><h4 id="邮件"><a href="#邮件" class="headerlink" title="邮件"></a>邮件</h4><pre><code>#修改/etc/gitlab/gitlab.rb，需要邮箱开启smtp
+gitlab_rails[&apos;gitlab_email_enabled&apos;] = true
+gitlab_rails[&apos;gitlab_email_from&apos;] = &apos;邮箱&apos;
+gitlab_rails[&apos;gitlab_email_display_name&apos;] = &apos;Example&apos;
+gitlab_rails[&apos;gitlab_email_reply_to&apos;] = &apos;noreply@example.com&apos;
+gitlab_rails[&apos;gitlab_email_subject_suffix&apos;] = &apos;&apos;
+gitlab_rails[&apos;smtp_enable&apos;] = true
+gitlab_rails[&apos;smtp_address&apos;] = &quot;smtp.qq.com&quot;
+gitlab_rails[&apos;smtp_port&apos;] = 587
+gitlab_rails[&apos;smtp_user_name&apos;] = &quot;邮箱&quot;
+gitlab_rails[&apos;smtp_password&apos;] = &quot;邮件密码&quot;
+gitlab_rails[&apos;smtp_domain&apos;] = &quot;邮箱&quot;
+gitlab_rails[&apos;smtp_authentication&apos;] = &quot;plain&quot;
+gitlab_rails[&apos;smtp_enable_starttls_auto&apos;] = true
+gitlab_rails[&apos;smtp_tls&apos;] = false
+user[&apos;git_user_email&apos;] = &quot;gitlab@qq.com}&quot;</code></pre><h4 id="中文支持"><a href="#中文支持" class="headerlink" title="中文支持"></a>中文支持</h4><pre><code>git clone https://gitlab.com/xhang/gitlab.git #可以加-b version。对应你的版本，查看对应的branch去下载
+gitlab-ctl stop #先停止gitlab服务
+\cp -rp gitlab/*   /opt/gitlab/embedded/service/gitlab-rails/ #将汉化替换进目标目录，会出现几个cannot overwrite，是正常的
+gitlab-ctl reconfigure  #重新配置
+gitlab-ctl start   #启动服务
+gitlab-ctl reconfigure #出现502的情况的话，再直接重载配置一遍</code></pre><h2 id="出现的问题"><a href="#出现的问题" class="headerlink" title="出现的问题"></a>出现的问题</h2><ul>
+<li><p>出现401错误</p>
+<pre><code>修改/etc/gitlab/gitlab.rb
+nginx[&apos;enable&apos;] = true
+nginx[&apos;listen_port&apos;] = 90
+由于gitlab的nginx默认的端口为80，与本机的80端口冲突，所以修改为90</code></pre></li>
+<li><p>出现502错误</p>
+<pre><code>gitlab-ctl reconfigure #出现502的情况的话，再直接重载配置一遍</code></pre><h3 id="内网穿透支持"><a href="#内网穿透支持" class="headerlink" title="内网穿透支持"></a>内网穿透支持</h3><h4 id="ngrok"><a href="#ngrok" class="headerlink" title="ngrok"></a>ngrok</h4><h4 id="frp"><a href="#frp" class="headerlink" title="frp"></a>frp</h4></li>
+</ul>
+<h3 id="Gitlab内外网"><a href="#Gitlab内外网" class="headerlink" title="Gitlab内外网"></a>Gitlab内外网</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">外网</span><br><span class="line">gitlab地址 gitlab.ngrok.pkgame.net</span><br><span class="line">ssh通道 ssh://git@gitlab.ngrok.pkgame.net:1122/&lt;group&gt;/&lt;project&gt;.git</span><br><span class="line">外网环境操作(不在公司)</span><br><span class="line">git clone ssh://git@gitlab.ngrok.pkgame.net:1122/&lt;group&gt;/&lt;project&gt;.git  #克隆远程项目</span><br><span class="line">git remote add &lt;name&gt; ssh://git@gitlab.ngrok.pkgame.net:1122/&lt;group&gt;/&lt;project&gt;.git #关联远程项目</span><br><span class="line">git pull &lt;name&gt; &lt;branch&gt; #拉取代码</span><br><span class="line">git push &lt;name&gt; &lt;branch&gt; #推送代码</span><br><span class="line"></span><br><span class="line">内网(在公司，速度会快20倍)</span><br><span class="line">可以将gitlab地址绑定至192.168.1.19(域名可自定义,修改方法百度)</span><br><span class="line">ssh通道 git@192.168.1.19:&lt;group&gt;/&lt;project&gt;.git(绑定了域名的话，IP可换为域名)</span><br><span class="line">在内网环境的项目下操作</span><br><span class="line">git clone git@domain:&lt;group&gt;/&lt;project&gt;.git  #克隆远程项目</span><br><span class="line">git remote add &lt;name&gt; git@domain:&lt;group&gt;/&lt;project&gt;.git #关联远程项目</span><br><span class="line">git pull &lt;name&gt; &lt;branch&gt; #拉取代码</span><br><span class="line">git push &lt;name&gt; &lt;branch&gt; #推送代码</span><br></pre></td></tr></table></figure>
 
-block content
-  .autopagerize_page_element: .content: .post-page
-    include mixins
-    +make_post(page, true)
-    .share
-      .evernote
-        a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
-      .weibo
-        a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
-      .twitter
-        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
-    - var prev = page.prev ? page.prev.path : false;
-    - var next = page.next ? page.next.path : false;
-    .pagination
-      ul.clearfix
-        if prev
-          li.pre.pagbuttons
-            a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
-        if next
-          li.next.pagbuttons
-            a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
-    if page.comments
-        include partial/comments
+
+  </article>
+  <footer class="f-cf">
+    
+    
+      <a href="/2019/09/13/hello-world/" class="link f-fr">Hello World⟶</a>
+    
+  </footer>
+</section></div>
+    <footer id="footer" class="f-cf">
+  d.guangying@foxmail.com
+  
+    
+      
+        · <a href="https://dribbble.com/clovertuan" target="_blank" class="nav-icn">Dribbble</a>
+      
+    
+      
+        · <a href="https://www.behance.net/clovertuan" target="_blank" class="nav-icn">Behance</a>
+      
+    
+      
+        · <a href="http://clovertuan.lofter.com/" target="_blank" class="nav-icn">Lofter</a>
+      
+    
+      
+        · <a href="https://www.instagram.com/clovertuan/" target="_blank" class="nav-icn">Instagram</a>
+      
+    
+      
+        · <a href="https://github.com/cloverTuan" target="_blank" class="nav-icn">GitHub</a>
+      
+    
+  
+  <span class="copyright">All rights reserved @Clover Tuan</span>
+</footer>
+  </div>
+</body>
+</html>
