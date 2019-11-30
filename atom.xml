@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://whisshe.github.io/"/>
-  <updated>2019-09-15T08:18:45.848Z</updated>
+  <updated>2019-11-30T14:14:35.175Z</updated>
   <id>https://whisshe.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安卓下shadowsocks的安装</title>
+    <link href="https://whisshe.github.io/2019/11/30/%E5%AE%89%E5%8D%93%E4%B8%8Bshadowsocks%E7%9A%84%E5%AE%89%E8%A3%85/"/>
+    <id>https://whisshe.github.io/2019/11/30/安卓下shadowsocks的安装/</id>
+    <published>2019-11-30T14:09:33.000Z</published>
+    <updated>2019-11-30T14:14:35.175Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安卓"><a href="#安卓" class="headerlink" title="安卓"></a>安卓</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>安卓的安装不那么麻烦，不需要电脑也能安装成功。但是依赖谷歌组件，可以自行下载<strong>谷歌安装器</strong>，一键安装谷歌组件。</p><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>下载shadowsocks客户端安装包</p><p>下载地址：<a href="https://www.lanzous.com/b05hzryd" target="_blank" rel="noopener">https://www.lanzous.com/b05hzryd</a>  密码:9iek</p><p>解压后是一个apk安装包。</p><h3 id="安装配置过程"><a href="#安装配置过程" class="headerlink" title="安装配置过程"></a>安装配置过程</h3><p>安装apk，打开软件后点击右上角的+号图标<br><img src="https://i.loli.net/2019/09/30/O9ACVMig5l3dqcS.png" alt></p><p>选择扫描二维码<br><img src="https://i.loli.net/2019/09/30/q57UeF6fE2XKVRp.png" alt></p><p>直接扫描二维码，如果二维码是保存在相册中，则点击右上角的相册图标进入相册选择二维码</p><p><img src="https://i.loli.net/2019/09/30/v3KBRiNEJLdHAt4.png" alt><br>如果通过相册中的二维码扫描失败，尝试从<strong>剪贴板导入URL</strong></p><p>先复制发给你的URL（ss://开头的链接），到手机中按图示点击从剪贴板导入，就能看到新添加的配置。<br><img src="https://i.loli.net/2019/09/30/FLePM2fzjrJIZvm.png" alt></p><p>添加成功后，删除软件自带的198开头的（左滑或者右滑删除，198开头的是不能上网的），点击新添加的配置（前面是绿色代表选中），然后再点击下方的纸飞机图标即可开启<br>如果手机提示需要添加VPN的权限，同意即可</p><p><img src="https://i.loli.net/2019/09/30/nUvp7PYhRxyJGXg.png" alt></p><p>最后检验一下，打开浏览器输入  google.com</p><p><img src="https://i.loli.net/2019/09/30/n7CRmEelOkUL82p.png" alt></p><p>enjoy ！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;安卓&quot;&gt;&lt;a href=&quot;#安卓&quot; class=&quot;headerlink&quot; title=&quot;安卓&quot;&gt;&lt;/a&gt;安卓&lt;/h2&gt;&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;p&gt;安卓的
+      
+    
+    </summary>
+    
+    
+      <category term="shadowsocks 科学上网" scheme="https://whisshe.github.io/tags/shadowsocks-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+  </entry>
   
   <entry>
     <title>git基础</title>
