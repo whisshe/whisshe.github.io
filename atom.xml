@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://whisshe.github.io/"/>
-  <updated>2019-11-30T14:23:57.474Z</updated>
+  <updated>2019-12-01T04:37:37.053Z</updated>
   <id>https://whisshe.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IOS下shadowsocks的安装</title>
+    <link href="https://whisshe.github.io/2019/12/01/IOS%E4%B8%8Bshadowsocks%E7%9A%84%E5%AE%89%E8%A3%85/"/>
+    <id>https://whisshe.github.io/2019/12/01/IOS下shadowsocks的安装/</id>
+    <published>2019-12-01T04:37:36.773Z</published>
+    <updated>2019-12-01T04:37:37.053Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="苹果IOS"><a href="#苹果IOS" class="headerlink" title="苹果IOS"></a>苹果IOS</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>由于苹果中国的政策原因，VPN软件大部分被下架了。所以本次的IOS客户端需要通过电脑进行安装（如果有美国苹果的账号可以下载potatso lite）。</p><p>本方法适用于iPhone、iPad。</p><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1、在电脑上安装 <a href="https://pro.25pp.com/" target="_blank" rel="noopener">pp助手</a>，或其它类似的手机助手。</p><p>2、下载shadowrocket客户端</p><p>下载地址：<a href="https://www.lanzous.com/b965205/" target="_blank" rel="noopener">https://www.lanzous.com/b965205/</a>    密码:b9zm</p><p>下载后解压得到ipa文件</p><h3 id="安装配置过程"><a href="#安装配置过程" class="headerlink" title="安装配置过程"></a>安装配置过程</h3><p>打开pp助手</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902141009.png" alt><br>连接iPhone/iPad</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902141451.png" alt><br>在手机上解锁并点击信任，点击信任后需要输入锁屏密码</p><p>连接成功后，依次点击应用管理，安装本地应用</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902142628.png" alt></p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902142831.png" alt><br>选择前面下载的ipa文件，点击打开</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902142911.png" alt><br>点击安装</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902143002.png" alt><br>点击箭头指的地方可以看到安装进度</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902143035.png" alt><br>打开shadowrocket，可以扫描二维码或者点击加号手动添加配置</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144651.png" alt><br>添加好配置后，选择节点（黄色的点代表被选中的节点），打开箭头所指的开关。按照图中的步骤配置即可。</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144146.png" alt><br><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144330.png" alt><br>指纹或者面容ID</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144452.png" alt></p><p>然后验证一下，打开浏览器输入  google.com</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdownb75156e3821228818e25a8220e91baa.jpg" alt></p><p>enjoy ！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;苹果IOS&quot;&gt;&lt;a href=&quot;#苹果IOS&quot; class=&quot;headerlink&quot; title=&quot;苹果IOS&quot;&gt;&lt;/a&gt;苹果IOS&lt;/h2&gt;&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://whisshe.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="shadowsocks 科学上网" scheme="https://whisshe.github.io/tags/shadowsocks-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+  </entry>
   
   <entry>
     <title>Mac下shadowsocks的安装</title>
@@ -53,29 +78,6 @@
       
       
         &lt;h2 id=&quot;Windows&quot;&gt;&lt;a href=&quot;#Windows&quot; class=&quot;headerlink&quot; title=&quot;Windows&quot;&gt;&lt;/a&gt;Windows&lt;/h2&gt;&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概
-      
-    
-    </summary>
-    
-    
-      <category term="shadowsocks 科学上网" scheme="https://whisshe.github.io/tags/shadowsocks-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iPhone下shadowsocks的安装</title>
-    <link href="https://whisshe.github.io/2019/11/30/iPhone%E4%B8%8Bshadowsocks%E7%9A%84%E5%AE%89%E8%A3%85/"/>
-    <id>https://whisshe.github.io/2019/11/30/iPhone下shadowsocks的安装/</id>
-    <published>2019-11-30T14:20:42.000Z</published>
-    <updated>2019-11-30T14:23:57.491Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="苹果IOS"><a href="#苹果IOS" class="headerlink" title="苹果IOS"></a>苹果IOS</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>由于苹果中国的政策原因，VPN软件大部分被下架了。所以本次的IOS客户端需要通过电脑进行安装（如果有美国苹果的账号可以下载potatso lite）。</p><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1、在电脑上安装 <a href="https://pro.25pp.com/" target="_blank" rel="noopener">pp助手</a></p><p>2、下载shadowrocket客户端</p><p>下载地址：<a href="https://www.lanzous.com/b965205/" target="_blank" rel="noopener">https://www.lanzous.com/b965205/</a>    密码:b9zm</p><p>下载后解压得到ipa文件</p><h3 id="安装配置过程"><a href="#安装配置过程" class="headerlink" title="安装配置过程"></a>安装配置过程</h3><p>打开pp助手</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902141009.png" alt><br>连接iPhone/iPad</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902141451.png" alt><br>在手机上解锁并点击信任，点击信任后需要输入锁屏密码</p><p>连接成功后，依次点击应用管理，安装本地应用</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902142628.png" alt></p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902142831.png" alt><br>选择前面下载的ipa文件，点击打开</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902142911.png" alt><br>点击安装</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902143002.png" alt><br>点击箭头指的地方可以看到安装进度</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902143035.png" alt><br>打开shadowrocket，可以扫描二维码或者点击加号手动添加配置</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144651.png" alt><br>添加好配置后，选择节点（黄色的点代表被选中的节点），打开箭头所指的开关。按照图中的步骤配置即可。</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144146.png" alt><br><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144330.png" alt><br>指纹或者面容ID</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144452.png" alt></p><p>然后验证一下，打开浏览器输入  google.com</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdownb75156e3821228818e25a8220e91baa.jpg" alt></p><p>enjoy ！</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;苹果IOS&quot;&gt;&lt;a href=&quot;#苹果IOS&quot; class=&quot;headerlink&quot; title=&quot;苹果IOS&quot;&gt;&lt;/a&gt;苹果IOS&lt;/h2&gt;&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概
       
     
     </summary>

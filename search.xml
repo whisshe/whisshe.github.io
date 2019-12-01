@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>IOS下shadowsocks的安装</title>
+      <link href="/2019/12/01/IOS%E4%B8%8Bshadowsocks%E7%9A%84%E5%AE%89%E8%A3%85/"/>
+      <url>/2019/12/01/IOS%E4%B8%8Bshadowsocks%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<h2 id="苹果IOS"><a href="#苹果IOS" class="headerlink" title="苹果IOS"></a>苹果IOS</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>由于苹果中国的政策原因，VPN软件大部分被下架了。所以本次的IOS客户端需要通过电脑进行安装（如果有美国苹果的账号可以下载potatso lite）。</p><p>本方法适用于iPhone、iPad。</p><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1、在电脑上安装 <a href="https://pro.25pp.com/" target="_blank" rel="noopener">pp助手</a>，或其它类似的手机助手。</p><p>2、下载shadowrocket客户端</p><p>下载地址：<a href="https://www.lanzous.com/b965205/" target="_blank" rel="noopener">https://www.lanzous.com/b965205/</a>    密码:b9zm</p><p>下载后解压得到ipa文件</p><h3 id="安装配置过程"><a href="#安装配置过程" class="headerlink" title="安装配置过程"></a>安装配置过程</h3><p>打开pp助手</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902141009.png" alt><br>连接iPhone/iPad</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902141451.png" alt><br>在手机上解锁并点击信任，点击信任后需要输入锁屏密码</p><p>连接成功后，依次点击应用管理，安装本地应用</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902142628.png" alt></p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902142831.png" alt><br>选择前面下载的ipa文件，点击打开</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902142911.png" alt><br>点击安装</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902143002.png" alt><br>点击箭头指的地方可以看到安装进度</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902143035.png" alt><br>打开shadowrocket，可以扫描二维码或者点击加号手动添加配置</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144651.png" alt><br>添加好配置后，选择节点（黄色的点代表被选中的节点），打开箭头所指的开关。按照图中的步骤配置即可。</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144146.png" alt><br><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144330.png" alt><br>指纹或者面容ID</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144452.png" alt></p><p>然后验证一下，打开浏览器输入  google.com</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdownb75156e3821228818e25a8220e91baa.jpg" alt></p><p>enjoy ！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> shadowsocks 科学上网 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Mac下shadowsocks的安装</title>
       <link href="/2019/11/30/Mac%E4%B8%8Bshadowsocks%E7%9A%84%E5%AE%89%E8%A3%85/"/>
       <url>/2019/11/30/Mac%E4%B8%8Bshadowsocks%E7%9A%84%E5%AE%89%E8%A3%85/</url>
@@ -28,25 +53,6 @@
       <url>/2019/11/30/Windows%E4%B8%8Bshadowsocks%E7%9A%84%E5%AE%89%E8%A3%85/</url>
       
         <content type="html"><![CDATA[<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>windows下的安装很简单，解压，导入配置就可以使用了</p><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p><strong>下载shadowsocks客户端压缩包，解压到容易找到的地方。</strong></p><p>下载地址：<a href="https://www.lanzous.com/b965206/" target="_blank" rel="noopener">https://www.lanzous.com/b965206/</a> 密码:fp20</p><p>下载后解压至容易找到的目录。</p><h3 id="安装配置过程"><a href="#安装配置过程" class="headerlink" title="安装配置过程"></a>安装配置过程</h3><p>解压后，文件夹内是客户端程序<br><img src="https://i.loli.net/2019/09/30/3Ow7lHFk5rzYNvf.png" alt></p><p>如果安装时提示下图内容（一般是win7系统），请下载安装 .NET Framework4</p><p><a href="https://download.microsoft.com/download/F/9/4/F942F07D-F26F-4F30-B4E3-EBD54FABA377/NDP462-KB3151800-x86-x64-AllOS-ENU.exe" target="_blank" rel="noopener">.NET Framework4.6.2官方下载地址</a></p><p><img src="https://i.loli.net/2019/09/23/wXvIxkcABjqV6ys.png" alt></p><p>双击运行，可以在打开的框中填入配置，或者扫描二维码（<strong>看后面的步骤有介绍</strong>）</p><p><img src="https://i.loli.net/2019/09/30/rwI7NiQWyThvJDt.png" alt></p><p><strong>二维码导入配置（先拿到二维码，打开放在屏幕中间）</strong></p><p>首先点击上箭头，能看到纸飞机的图标</p><p><img src="https://i.loli.net/2019/09/30/URhEZW5lJHOFu4z.png" alt></p><p><strong>右键点击纸飞机的图标，依次选择服务器–扫描屏幕上的二维码</strong></p><p><img src="https://i.loli.net/2019/09/30/zoq1cH6CJplFBXP.png" alt></p><p><strong>识别成功后会弹出新添加的配置，点击确定。</strong></p><p><img src="https://i.loli.net/2019/09/30/eqhwlBR54YaPJbt.png" alt></p><p>再次右键纸飞机图标，依次选择<strong>系统代理–PAC模式</strong>，开启代理</p><p><img src="https://i.loli.net/2019/09/30/Y2GWwtBisgUfSEj.png" alt></p><p>顺便加上开机自启，后面就不需要这么麻烦了</p><p><img src="https://i.loli.net/2019/09/30/VoIUHvWmBiPNX36.png" alt></p><p>最后检验一下 ，打开浏览器输入  google.com</p><p><img src="https://i.loli.net/2019/09/30/aneLxpAMtlrkFBy.png" alt></p><p>enjoy ！</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> shadowsocks 科学上网 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>iPhone下shadowsocks的安装</title>
-      <link href="/2019/11/30/iPhone%E4%B8%8Bshadowsocks%E7%9A%84%E5%AE%89%E8%A3%85/"/>
-      <url>/2019/11/30/iPhone%E4%B8%8Bshadowsocks%E7%9A%84%E5%AE%89%E8%A3%85/</url>
-      
-        <content type="html"><![CDATA[<h2 id="苹果IOS"><a href="#苹果IOS" class="headerlink" title="苹果IOS"></a>苹果IOS</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>由于苹果中国的政策原因，VPN软件大部分被下架了。所以本次的IOS客户端需要通过电脑进行安装（如果有美国苹果的账号可以下载potatso lite）。</p><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1、在电脑上安装 <a href="https://pro.25pp.com/" target="_blank" rel="noopener">pp助手</a></p><p>2、下载shadowrocket客户端</p><p>下载地址：<a href="https://www.lanzous.com/b965205/" target="_blank" rel="noopener">https://www.lanzous.com/b965205/</a>    密码:b9zm</p><p>下载后解压得到ipa文件</p><h3 id="安装配置过程"><a href="#安装配置过程" class="headerlink" title="安装配置过程"></a>安装配置过程</h3><p>打开pp助手</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902141009.png" alt><br>连接iPhone/iPad</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902141451.png" alt><br>在手机上解锁并点击信任，点击信任后需要输入锁屏密码</p><p>连接成功后，依次点击应用管理，安装本地应用</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902142628.png" alt></p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902142831.png" alt><br>选择前面下载的ipa文件，点击打开</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902142911.png" alt><br>点击安装</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902143002.png" alt><br>点击箭头指的地方可以看到安装进度</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902143035.png" alt><br>打开shadowrocket，可以扫描二维码或者点击加号手动添加配置</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144651.png" alt><br>添加好配置后，选择节点（黄色的点代表被选中的节点），打开箭头所指的开关。按照图中的步骤配置即可。</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144146.png" alt><br><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144330.png" alt><br>指纹或者面容ID</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdown20190902144452.png" alt></p><p>然后验证一下，打开浏览器输入  google.com</p><p><img src="https://raw.githubusercontent.com/whisshe/picture/master/markdownb75156e3821228818e25a8220e91baa.jpg" alt></p><p>enjoy ！</p>]]></content>
       
       
       
