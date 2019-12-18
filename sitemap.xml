@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://whisshe.github.io/2019/12/18/shadowsocks-free/</loc>
+    
+    <lastmod>2019-12-18T02:57:17.804Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://whisshe.github.io/friends/index.html</loc>
+    
+    <lastmod>2019-12-18T01:50:12.811Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://whisshe.github.io/projects/index.html</loc>
+    
+    <lastmod>2019-12-18T01:46:35.731Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://whisshe.github.io/about/index.html</loc>
+    
+    <lastmod>2019-12-18T01:40:58.812Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://whisshe.github.io/2019/12/18/%E8%A7%A3%E5%86%B3Windows%E4%B8%8BGit%20Bash%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E4%B8%BA%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</loc>
     
     <lastmod>2019-12-18T01:31:17.614Z</lastmod>
@@ -18,7 +46,7 @@
   <url>
     <loc>https://whisshe.github.io/2019/12/18/pypi_speedup/</loc>
     
-    <lastmod>2019-12-18T00:59:01.236Z</lastmod>
+    <lastmod>2019-12-18T01:10:17.185Z</lastmod>
     
   </url>
   
@@ -75,13 +103,6 @@
     <loc>https://whisshe.github.io/categories/index.html</loc>
     
     <lastmod>2019-12-05T11:37:29.850Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://whisshe.github.io/about/index.html</loc>
-    
-    <lastmod>2019-12-05T11:37:29.849Z</lastmod>
     
   </url>
   
