@@ -209,19 +209,6 @@
     </entry>
     
     
-    
-    <entry>
-      <title>推荐</title>
-      <link href="/2018/12/17/recommend/"/>
-      <url>/2018/12/17/recommend/</url>
-      
-        <content type="html"><![CDATA[<h2 id="科学上网"><a href="#科学上网" class="headerlink" title="科学上网"></a>科学上网</h2><h3 id="为什么要科学上网"><a href="#为什么要科学上网" class="headerlink" title="为什么要科学上网"></a>为什么要科学上网</h3><p>​       世界上最大的搜索引擎叫谷歌，谷歌服务在世界互联网的地位相当于中国的腾讯。可以使用谷歌账号直接登录很多网站。但是由于某些原因，谷歌不能适应中国的要求，所以被GFW（防火长城）屏蔽了。</p><p>​       在学习中有个谷歌账号将非常方便，所以这里将介绍如何突破GFW的封锁，然后注册谷歌账号。随便也能加速某些网站的访问。</p><h3 id="科学上网的实现"><a href="#科学上网的实现" class="headerlink" title="科学上网的实现"></a>科学上网的实现</h3><p>​        这里使用到的是一个叫socks5的技术，具体原理不介绍了，有兴趣可以搜索了解一下。</p><p>​        首先提供一个<strong>SS链接：</strong> <code>ss://Y2hhY2hhMjA6MDlKZFM1V2NANDcuMjQ0LjE4OS4yMjM6OTcyNA==</code></p><p>​         具体的使用配置方法见这里：<a href="https://whisshe.github.io/2019/11/30/shadowsocks_client_install/">安装配置方法</a>。配置完成后可以开始下一步</p><h3 id="浏览器的选择"><a href="#浏览器的选择" class="headerlink" title="浏览器的选择"></a>浏览器的选择</h3><p>​      电脑端获取信息的最基本工具就是浏览器，然后使用搜索引擎搜寻想要的信息。</p><p>​      世界上最流行的浏览器内核为chromium(超过百分之八十的人使用)，这意味着大家都优先适配chromium的浏览器。所以这里推荐使用谷歌浏览器。可以直接点击 <a href="https://www.lanzous.com/i84zvcf" target="_blank" rel="noopener">这里</a> 下载。或者点击 <a href="https://www.google.com/intl/en_us/chrome/" target="_blank" rel="noopener">这里</a>（要先完成科学上网才能打开）看它的介绍。</p><p>​       第二名往往远没有第一名受到的关注多，像世界上的第二高峰一样。这里说的第二名是firefox火狐，也是非常优秀的浏览器。点<a href="https://www.mozilla.org/zh-CN/firefox/new/" target="_blank" rel="noopener">这里</a>可以了解一下。</p><h3 id="谷歌账号的注册"><a href="#谷歌账号的注册" class="headerlink" title="谷歌账号的注册"></a>谷歌账号的注册</h3><p>​         目前在电脑端注册谷歌账号，填写电话的时候都会出现“<strong>此号码不能用于验证</strong>”的提示。所以需要找一位有安卓手机的人（比如说我）帮忙，利用gmail去注册谷歌账号</p><h2 id="打字练习入门"><a href="#打字练习入门" class="headerlink" title="打字练习入门"></a>打字练习入门</h2><p>优秀的学习打字的入门网站，可以使用注册好的谷歌账号登录：  <a href="https://www.typingclub.com/" target="_blank" rel="noopener">TypingClub  打字是把手指放在最合适的键位</a></p><h2 id="Python编程入门"><a href="#Python编程入门" class="headerlink" title="Python编程入门"></a>Python编程入门</h2><p>入门学习：<a href="https://www.liaoxuefeng.com/wiki/1016959663602400" target="_blank" rel="noopener">廖雪峰 –  中文，免费，零起点，完整示例，基于最新的Python 3版本</a>  、<a href="https://www.runoob.com/python3/python3-tutorial.html" target="_blank" rel="noopener">菜鸟教程  –  Python3 </a></p><p>建议有一定基础后再看： <a href="https://py.checkio.org/" target="_blank" rel="noopener">寓教于乐，趣学Python；超过200个范例</a></p><p>编辑器选择：VScode、sublime text 3 ；IDE选择：Pycharm （详细安装方法后面再补）</p><h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p><a href="https://medium.com/" target="_blank" rel="noopener">Medium – Get smarter about what matters to you</a></p><p>建议用电脑打开：<a href="https://www.allhistory.com/" target="_blank" rel="noopener">全历史 – 以时间轴的形式了解世界各国历史 </a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
   
   
 </search>
