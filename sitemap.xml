@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://whisshe.github.io/2019/11/30/shadowsocks_client_install/</loc>
+    
+    <lastmod>2021-04-23T10:17:56.710Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://whisshe.github.io/2019/09/13/hello-world/</loc>
     
     <lastmod>2021-04-23T10:16:41.638Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://whisshe.github.io/2019/11/30/Mac%E4%B8%8Bshadowsocks%E7%9A%84%E5%AE%89%E8%A3%85/</loc>
     
     <lastmod>2019-12-05T07:26:19.476Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://whisshe.github.io/2019/11/30/shadowsocks_client_install/</loc>
-    
-    <lastmod>2019-11-30T14:27:44.104Z</lastmod>
     
   </url>
   
